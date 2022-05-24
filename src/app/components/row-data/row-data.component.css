@@ -1,0 +1,21 @@
+.avatar{
+    border-radius: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: 30px;
+}
+.heading{
+    display: flex;
+}
+.data-row{
+    margin-top: 15px;
+}
+.commit-details{
+    display: inline;
+}
+.right{
+    float:right
+}
+.left{
+    float: left
+}

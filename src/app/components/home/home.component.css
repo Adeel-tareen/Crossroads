@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+}
+
+.input-fields{
+    margin-right:15px
+}
+
+.submitButton{
+    max-height: 38px;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: grey;
+    color: grey
+}

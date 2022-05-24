@@ -1,0 +1,22 @@
+
+
+<div class="card data-row">
+    <div class="card-body">
+        <div class="heading">
+            <img src="{{commit.committer.avatar_url}}" alt="Avatar" class="avatar">
+            <h4 class="message"><a href="{{commit.html_url}}" target="_blank">{{commit.commit.message}}</a></h4>
+            
+        </div>
+        <div class="commit-details">
+            <div class="left">
+                <p>{{commit.committer.login}} 
+                    <span *ngIf="commit.commit.verification.verified" class="badge bg-pill bg-success" >Verified</span>
+                    <span *ngIf="!commit.commit.verification.verified" class="badge bg-pill bg-secondary" >Verified</span>
+                </p>
+                
+
+            </div>
+            <p class="right">{{commit.commit.committer.date| date:'fullDate'}}</p>
+        </div>
+    </div>
+</div>

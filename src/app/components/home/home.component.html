@@ -1,0 +1,34 @@
+
+
+<div class="card">
+    <div class="card-header">
+        Crossroad (Fetch Commits History)
+    </div>
+    <div class="card-body container">
+        <form [formGroup]="gitForm" (ngSubmit)="onFormSubmit()" class="container" class="form">
+            <div class="input-group mb-3 input-fields">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">User Name</span>
+                </div>
+
+                <input type="text" class="form-control"aria-describedby="inputGroup-sizing-default" formControlName="userName" >
+              </div>
+
+              <div class="input-group mb-3 input-fields">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Repo Name</span>
+                </div>
+                <input type="text" class="form-control" aria-describedby="inputGroup-sizing-default" formControlName="repoName">
+              </div>
+            <button class="btn btn-primary submitButton" type="submit">Go</button> 
+        </form>
+    </div>
+</div>
+<div class="container">
+    
+    
+      <div *ngFor="let commit of commits" >
+        <app-row-data [commit]="commit"> </app-row-data>
+      </div>
+
+</div>
